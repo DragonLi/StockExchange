@@ -1,0 +1,31 @@
+{
+  "配置列表": [
+    {
+      "根地址": "https://trading.poems.com.hk",
+      "替换参数": {
+        "{用户名}": "",
+        "{密码}": "",
+        "{辉立key}": ""
+      },
+      "辉立key": "",
+      "用户名": "",
+      "密码": "",
+      "请求列表": [
+        {
+          "相对地址": "/Poems2/LoginAction.asp",
+          "发送数据": "{'func': 'Login', 'Language': 'ZH', 'IPO': '','iFormType': '','Accode': {用户名},'Password': {密码}}",
+          "发送方法": {
+            "Method": "POST"
+          }
+        },
+        {
+          "相对地址": "/Poems2/LoginAction.asp",
+          "发送数据": "{'iFunc': 'LOGIN', 'Language': '', 'IPO': '', 'pErrMsg': '', 'iFormType': '', 'pLoginId': {用户名},'iOTP': {辉立key}}",
+          "发送方法": {
+            "Method": "POST"
+          }
+        }
+      ]
+    }
+  ]
+}
